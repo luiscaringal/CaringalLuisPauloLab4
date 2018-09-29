@@ -52,8 +52,15 @@ public class MainActivity extends AppCompatActivity {
         Log.d("4IT-H","onDestroy() has executed...");
     }
 
-    public void displayMsg(View v){
+    public void displayToast(View v){
+        Toast.makeText(this,"Hello 4IT-H...",Toast.LENGTH_LONG).show();
+        Log.d("4IT-H","Clicked Toast Button");
+//        Snackbar.make(v,"Hello Again...",Snackbar.LENGTH_LONG).show();
+    }
+
+    public void displaySnackbar(View v){
 //        Toast.makeText(this,"Hello 4IT-H...",Toast.LENGTH_LONG).show();
         Snackbar.make(v,"Hello Again...",Snackbar.LENGTH_LONG).show();
+        Log.d("4IT-H","Clicked Snackbar Button");
     }
 }
